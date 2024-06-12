@@ -1,13 +1,21 @@
+body {
+  background-color: #fafafa;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19 /16 * 100%;
+}
+
 h1,
 h2,
 h3,
 h4,
-p,
-ul {
+p {
   margin: 0;
 }
 
-/* Адаптивная настройка изображения */
 img {
   display: block;
   max-width: 100%;
@@ -17,6 +25,16 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
 
 ul {
@@ -33,5 +51,82 @@ ul {
 
 /*Header*/
 .header {
+  /* min-height: 100vh; */
+  background-image: linear-gradient(to bottom, #f3d6d1, #fafafa);
+}
+
+.header__nav {
   padding-top: 40px;
+  padding-bottom: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 700;
+}
+
+.menu__btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 150px;
+  height: 50px;
+}
+
+.header__content {
+  position: relative;
+  padding-bottom: 162px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 210px;
+}
+
+.title > span {
+  position: absolute;
+}
+
+.title--air {
+  z-index: 1;
+  top: 113px;
+  left: 0;
+}
+
+.title--pod {
+  z-index: 0;
+  top: 113px;
+  left: 306px;
+}
+
+.title--s {
+  z-index: 1;
+  top: 165px;
+  left: 707px;
+}
+
+.title--m {
+  top: 396px;
+  left: 777px;
+  z-index: 1;
+}
+
+.title--ax {
+  z-index: 0;
+  top: 531px;
+  left: 892px;
+}
+
+.header__content-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }

@@ -1,0 +1,40 @@
+.composition {
+  margin-bottom: 180px;
+}
+
+.composition__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 40px auto;
+}
+
+.composition__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: calc(77 / 64);
+}
+
+.composition__text {
+  width: 653px;
+  text-align: center;
+}
+
+.composition__list {
+  display: flex;
+  justify-content: space-between;
+  width: 625px;
+  margin: 0 auto;
+}
+
+.composition__list--textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 230px;
+}
+
+.composition__item-text-span {
+  color: #e8b2a9;
+}

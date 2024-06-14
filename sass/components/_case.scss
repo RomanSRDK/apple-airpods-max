@@ -1,0 +1,41 @@
+.case {
+  background-color: #fafafa;
+  padding-top: 80px;
+  padding-bottom: 98px;
+}
+
+.case-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.case__title {
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: calc(77 / 64);
+}
+
+.case__text-top {
+  margin-bottom: 40px;
+}
+
+.case__text-down {
+  width: 403px;
+}
+
+.case__title-decorOne {
+  margin-top: 160px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: calc(77 / 64);
+}
+
+.case__title-decorTwo {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 210px;
+  line-height: calc(254 / 210);
+}

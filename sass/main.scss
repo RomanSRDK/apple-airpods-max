@@ -1,3 +1,14 @@
 // Base Styles
-@import "./base/base"; // Layouts Styles
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/base";
+
+// Layouts Styles
+@import "./layout/header";
+@import "./layout/footer";
+
 // Components Styles
+@import "./components/chooseColor";
+@import "./components/composition";
+@import "./components/case";
+@import "./components/bidding";

@@ -1,0 +1,21 @@
+.footer {
+  background-color: #000000;
+  padding: 50px 40px;
+}
+
+.footer__logo > svg {
+  fill: #ffffff;
+}
+
+.footer__contacts-container {
+  margin: 0 auto;
+  width: 179px;
+  color: #ffffff;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  gap: 20px;
+}

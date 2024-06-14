@@ -5,21 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AirPods Max</title>
 
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-
     <!--Stylesheets-->
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -27,7 +18,9 @@
       <div class="container">
         <div class="header__nav">
           <a href="#" class="header__logo">
-            <img src="./images/apple-logo.svg" alt="logo" />
+            <svg width="25" height="30">
+              <use href="./images/logo.svg#icon-apple-logo"></use>
+            </svg>
           </a>
           <nav class="menu">
             <ul class="menu__list">
@@ -41,7 +34,7 @@
                 <a href="" class="menu__link">Contacts</a>
               </li>
               <li class="menu__item">
-                <button href="#" class="menu__btn">Buy</button>
+                <button href="#" class="button btn header__btn">Buy</button>
               </li>
             </ul>
           </nav>
@@ -54,7 +47,7 @@
             ><span class="title--m">M</span><span class="title--ax">AX</span>
           </h1>
 
-          <div class="header__content-images">
+          <div class="header__content-image">
             <img
               src="./images/hero-images/airpods-pink.png"
               alt="AirPods Max"
@@ -74,14 +67,15 @@
           <div class="choose-color__text-container">
             <h3 class="choose-color__title">Choose your colour</h3>
             <p class="choose-color__text">
-              The perfect balance between the purity of Hi‑Fi and the magic of
-              AirPods. The ultimate personal audio experience.
+              A perfect balance of exhilarating high-fidelity audio and the
+              effortless magic of AirPods. The ultimate personal listening
+              experience is here.
             </p>
           </div>
 
           <ul class="chose-color__list">
             <li>
-              <button class="chose-color__item">
+              <button class="button chose-color__item">
                 <img
                   src="./images/choose-color/airpods-green.png"
                   alt=""
@@ -90,7 +84,7 @@
               </button>
             </li>
             <li>
-              <button class="chose-color__item">
+              <button class="button chose-color__item">
                 <img
                   src="./images/choose-color/airpods-blue.png"
                   alt=""
@@ -99,7 +93,7 @@
               </button>
             </li>
             <li>
-              <button class="chose-color__item">
+              <button class="button chose-color__item">
                 <img
                   src="./images/choose-color/airpods-silver.png"
                   alt=""
@@ -108,7 +102,7 @@
               </button>
             </li>
             <li>
-              <button class="chose-color__item">
+              <button class="button chose-color__item">
                 <img
                   src="./images/choose-color/airpods-black.png"
                   alt=""
@@ -117,7 +111,7 @@
               </button>
             </li>
             <!-- <li>
-              <button class="chose-color__item">
+              <button class="button chose-color__item">
                 <img
                   src="./images/choose-color/airpods-red.png"
                   alt=""
@@ -147,21 +141,29 @@
             <div class="composition__list--textBox">
               <li class="composition__item">
                 <p class="composition__item-text">
-                  The headband is made of breathable mesh, distributing the
-                  weight to reduce pressure on the head.
+                  The
+                  <span class="composition__item-text-span">canopy</span>
+                  spanning the headband is made from a breathable knit mesh,
+                  distributing weight to reduce on‑head pressure.
                 </p>
               </li>
               <li class="composition__item">
                 <p class="composition__item-text">
-                  The stainless steel structure is wrapped in a soft-touch
-                  material to provide a remarkable harmony between resistance,
-                  flexibility and comfort.
+                  The
+                  <span class="composition__item-text-span"
+                    >stainless steel frame</span
+                  >
+                  is wrapped with a soft-to-the-touch material for a remarkable
+                  combination of strength, flexibility, and comfort.
                 </p>
               </li>
               <li class="composition__item">
                 <p class="composition__item-text">
-                  The telescoping arms expand and stay in any position you want,
-                  allowing you to maintain fit and isolation.
+                  <span class="composition__item-text-span"
+                    >Telescoping arms</span
+                  >
+                  smoothly extend and stay where you set them, for a consistent
+                  fit and seal.
                 </p>
               </li>
             </div>
@@ -206,7 +208,7 @@
 
       <section class="bidding">
         <div class="container">
-          <div class="bidding__text-box">
+          <div class="bidding__inner">
             <p class="bidding__text">
               Custom Spatial Audio with dynamic head tracking provides a
               surround sound experience worthy of a movie theater.
@@ -221,13 +223,40 @@
               tracking creates a unique three-dimensional listening experience.
             </p>
           </div>
-          <button href="#" class="menu__btn bidding__btn">Buy</button>
+          <button href="#" class="button btn footer__btn">BUY</button>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container">
+        <div class="footer__contacts-container">
+          <p>Find a retailer near you</p>
+          <p>Or call 800 207 758</p>
+          <a href="#" class="footer__logo">
+            <svg width="25" height="30">
+              <use href="./images/logo.svg#icon-apple-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="footer__list">
+          <li>
+            <p>Copyright © 2024 Apple Inc.</p>
+          </li>
+          <li>
+            <p>All rights reserved.</p>
+          </li>
+          <li>
+            <p>Legal Notices</p>
+          </li>
+          <li>
+            <p>Site Map</p>
+          </li>
+          <li>
+            <p>Privacy Policy</p>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <script src="./js/main.js"></script>

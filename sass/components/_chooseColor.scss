@@ -3,11 +3,16 @@
   margin-bottom: 180px;
 }
 
+.choose-color__inner {
+  margin: 0 auto;
+  width: 1160px;
+}
+
 .choose-color__text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 79px auto;
+  margin-bottom: 79px;
 }
 
 .choose-color__title {
@@ -22,13 +27,17 @@
   text-align: center;
 }
 
-.chose-color__list {
+.choose-color__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.chose-color__item {
+.choose-color__btn {
   border: 1px solid #777777;
   border-radius: 20px;
   padding: 50px 55px;
+}
+
+.choose-color__btn-toggle {
+  display: none;
 }

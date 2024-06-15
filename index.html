@@ -10,11 +10,18 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <!--Stylesheets-->
   </head>
 
   <body>
-    <header class="header">
+    <header
+      class="color--red color--green color--blue color--silver color--black"
+    >
       <div class="container">
         <div class="header__nav">
           <a href="#" class="header__logo">
@@ -34,7 +41,7 @@
                 <a href="" class="menu__link">Contacts</a>
               </li>
               <li class="menu__item">
-                <button href="#" class="button btn header__btn">Buy</button>
+                <button href="#" class="button btn header__btn">BUY</button>
               </li>
             </ul>
           </nav>
@@ -47,15 +54,32 @@
             ><span class="title--m">M</span><span class="title--ax">AX</span>
           </h1>
 
-          <div class="header__content-image">
+          <div class="header__content-images">
             <img
+              class="content__select-color content__active color--red"
               src="./images/hero-images/airpods-pink.png"
               alt="AirPods Max"
             />
-            <!-- <img src="" alt="AirPods Max" />
-            <img src="" alt="AirPods Max" />
-            <img src="" alt="AirPods Max" />
-            <img src="" alt="AirPods Max" /> -->
+            <img
+              class="content__select-color color--green"
+              src="./images/hero-images/airpods-green.png"
+              alt="AirPods Max"
+            />
+            <img
+              class="content__select-color color--blue"
+              src="./images/hero-images/airpods-skyblue.png"
+              alt="AirPods Max"
+            />
+            <img
+              class="content__select-color color--silver"
+              src="./images/hero-images/airpods-silver.png"
+              alt="AirPods Max"
+            />
+            <img
+              class="content__select-color color--black"
+              src="./images/hero-images/airpods-spacegray.png"
+              alt="AirPods Max"
+            />
           </div>
         </div>
       </div>
@@ -64,62 +88,53 @@
     <main class="main">
       <section class="choose-color">
         <div class="container">
-          <div class="choose-color__text-container">
-            <h3 class="choose-color__title">Choose your colour</h3>
-            <p class="choose-color__text">
-              A perfect balance of exhilarating high-fidelity audio and the
-              effortless magic of AirPods. The ultimate personal listening
-              experience is here.
-            </p>
-          </div>
+          <div class="choose-color__inner">
+            <div class="choose-color__text-container">
+              <h3 class="choose-color__title">Choose your colour</h3>
+              <p class="choose-color__text">
+                A perfect balance of exhilarating high-fidelity audio and the
+                effortless magic of AirPods. The ultimate personal listening
+                experience is here.
+              </p>
+            </div>
 
-          <ul class="chose-color__list">
-            <li>
-              <button class="button chose-color__item">
-                <img
-                  src="./images/choose-color/airpods-green.png"
-                  alt=""
-                  class="chose-color__img"
-                />
+            <div class="choose-color__list">
+              <button
+                class="button choose-color__btn selected-color"
+                data-button="color--red"
+              >
+                <img src="./images/choose-color/airpods-red.png" alt="" />
               </button>
-            </li>
-            <li>
-              <button class="button chose-color__item">
-                <img
-                  src="./images/choose-color/airpods-blue.png"
-                  alt=""
-                  class="chose-color__img"
-                />
+
+              <button
+                class="button choose-color__btn"
+                data-button="color--green"
+              >
+                <img src="./images/choose-color/airpods-green.png" alt="" />
               </button>
-            </li>
-            <li>
-              <button class="button chose-color__item">
-                <img
-                  src="./images/choose-color/airpods-silver.png"
-                  alt=""
-                  class="chose-color__img"
-                />
+
+              <button
+                class="button choose-color__btn"
+                data-button="color--blue"
+              >
+                <img src="./images/choose-color/airpods-blue.png" alt="" />
               </button>
-            </li>
-            <li>
-              <button class="button chose-color__item">
-                <img
-                  src="./images/choose-color/airpods-black.png"
-                  alt=""
-                  class="chose-color__img"
-                />
+
+              <button
+                class="button choose-color__btn"
+                data-button="color--silver"
+              >
+                <img src="./images/choose-color/airpods-silver.png" alt="" />
               </button>
-            </li>
-            <!-- <li>
-              <button class="button chose-color__item">
-                <img
-                  src="./images/choose-color/airpods-red.png"
-                  alt=""
-                  class="chose-color__img"
-                />
+
+              <button
+                class="button choose-color__btn"
+                data-button="color--black"
+              >
+                <img src="./images/choose-color/airpods-black.png" alt="" />
               </button>
-            </li> -->
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -142,7 +157,9 @@
               <li class="composition__item">
                 <p class="composition__item-text">
                   The
-                  <span class="composition__item-text-span">canopy</span>
+                  <span class="composition__item-text-active color-red"
+                    >canopy</span
+                  >
                   spanning the headband is made from a breathable knit mesh,
                   distributing weight to reduce on‑head pressure.
                 </p>
@@ -150,7 +167,7 @@
               <li class="composition__item">
                 <p class="composition__item-text">
                   The
-                  <span class="composition__item-text-span"
+                  <span class="composition__item-text-active color-red"
                     >stainless steel frame</span
                   >
                   is wrapped with a soft-to-the-touch material for a remarkable
@@ -159,7 +176,7 @@
               </li>
               <li class="composition__item">
                 <p class="composition__item-text">
-                  <span class="composition__item-text-span"
+                  <span class="composition__item-text-active color-red"
                     >Telescoping arms</span
                   >
                   smoothly extend and stay where you set them, for a consistent
@@ -172,7 +189,27 @@
               <img
                 src="./images/composition/design_colors_red.jpg"
                 alt=""
-                class="composition__item-img"
+                class="color--red content__select-color content__active"
+              />
+              <img
+                src="./images/composition/design_colors_green.jpg"
+                alt=""
+                class="color--green content__select-color"
+              />
+              <img
+                src="./images/composition/design_colors_blue.jpg"
+                alt=""
+                class="color--blue content__select-color"
+              />
+              <img
+                src="./images/composition/design_colors_silver.jpg"
+                alt=""
+                class="color--silver content__select-color"
+              />
+              <img
+                src="./images/composition/design_colors_black.jpg"
+                alt=""
+                class="color--black content__select-color"
               />
             </div>
           </ul>
@@ -190,7 +227,27 @@
             <img
               src="./images/case/airpods-pink.jpg"
               alt=""
-              class="case__img"
+              class="color--red content__select-color content__active"
+            />
+            <img
+              src="./images/case/airpods-green.jpg"
+              alt=""
+              class="color--green content__select-color"
+            />
+            <img
+              src="./images/case/airpods-silver.jpg"
+              alt=""
+              class="color--silver content__select-color"
+            />
+            <img
+              src="./images/case/airpods-skyblue.jpg"
+              alt=""
+              class="color--blue content__select-color"
+            />
+            <img
+              src="./images/case/airpods-spacegray.jpg"
+              alt=""
+              class="color--black content__select-color"
             />
             <span class="case__title-decorOne"
               >Stayin' alive, stayin' alive.</span

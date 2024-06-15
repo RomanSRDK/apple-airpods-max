@@ -38,3 +38,15 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.selected-color {
+  display: none;
+}
+
+.content__select-color {
+  display: none;
+}
+
+.content__active {
+  display: block;
+}

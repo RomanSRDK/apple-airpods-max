@@ -58,8 +58,35 @@ img {
   margin: 0 auto;
 }
 
-.header {
-  /* min-height: 100vh; */
+.selected-color {
+  display: none;
+}
+
+.content__select-color {
+  display: none;
+}
+
+.content__active {
+  display: block;
+}
+
+header.color--black {
+  background-image: linear-gradient(to bottom, #a7a7a9, #ffffff);
+}
+
+header.color--blue {
+  background-image: linear-gradient(to bottom, #cadbeb, #ffffff);
+}
+
+header.color--silver {
+  background-image: linear-gradient(to bottom, #b6b6b6, #ffffff);
+}
+
+header.color--green {
+  background-image: linear-gradient(to bottom, #ddead9, #ffffff);
+}
+
+header.color--red {
   background-image: linear-gradient(to bottom, #f3d6d1, #ffffff);
 }
 
@@ -83,8 +110,23 @@ img {
 }
 
 .header__btn {
+  position: relative;
   background-color: #000000;
   color: #ffffff;
+  overflow: hidden;
+}
+
+.header__btn::before {
+  font-family: FontAwesome;
+  content: "\f07a";
+  position: absolute;
+  top: 11px;
+  left: -30px;
+  transition: all 200ms ease;
+}
+
+.header__btn:hover:before {
+  left: 7px;
 }
 
 .header__content {
@@ -131,7 +173,7 @@ img {
   left: 892px;
 }
 
-.header__content-image {
+.header__content-images {
   position: relative;
   display: flex;
   justify-content: center;
@@ -164,11 +206,16 @@ img {
   margin-bottom: 180px;
 }
 
+.choose-color__inner {
+  margin: 0 auto;
+  width: 1160px;
+}
+
 .choose-color__text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 79px auto;
+  margin-bottom: 79px;
 }
 
 .choose-color__title {
@@ -183,15 +230,19 @@ img {
   text-align: center;
 }
 
-.chose-color__list {
+.choose-color__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.chose-color__item {
+.choose-color__btn {
   border: 1px solid #777777;
   border-radius: 20px;
   padding: 50px 55px;
+}
+
+.choose-color__btn-toggle {
+  display: none;
 }
 
 .composition {
@@ -231,8 +282,12 @@ img {
   width: 230px;
 }
 
-.composition__item-text-span {
+.composition__item-text-active {
   color: #e8b2a9;
+}
+
+.composition__item-img-active {
+  display: block;
 }
 
 .case {

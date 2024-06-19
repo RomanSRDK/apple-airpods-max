@@ -37,24 +37,25 @@ header.color--red {
   font-weight: 700;
 }
 
+// .header__btn::before {
+//   content: "\f07a";
+//   font-family: FontAwesome;
+//   font-size: fa-xs;
+//   position: absolute;
+//   top: 10px;
+//   left: -30px;
+//   transition: all 500ms ease;
+// }
+
+// .header__btn:hover::before {
+//   left: 18px;
+// }
+
 .header__btn {
   position: relative;
   background-color: #000000;
   color: #ffffff;
-  overflow: hidden;
-}
-
-.header__btn::before {
-  font-family: FontAwesome;
-  content: "\f07a";
-  position: absolute;
-  top: 11px;
-  left: -30px;
-  transition: all 200ms ease;
-}
-
-.header__btn:hover:before {
-  left: 7px;
+  // overflow: hidden;
 }
 
 .header__content {
